@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriTrack-Your Personal Diet and Calorie Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="download.png">
+</head>
+<body>
+      <nav class="navi">
+        <div class="nav-in">
+            <a href="index.html" class="nu">NutriTrack</a>
+            <ul class="nav-link">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="calcutator.html">Calorie Calculator</a></li>
+                <li><a href="foodlog.html">Foodlog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="bannar">
+            <p class="hero2">Step 2 of your day</p>
+            <h1>Log today's meals</h1>
+            <p>Add each meal as you eat it.Everything you log appears instantly in the table below no page reload needed.</p>
+        </div>
+    </header><br>
+        <div class="form-card"><h2 style="font-size: larger;">Add a meal</h2>
+        <div class="form-gr">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required>
+        </div>
+        <div class="form-gr">
+            <label for="name">Food Iteam</label>
+            <input type="text" id="name" name="name" placeholder="e.g.Chicken curry with rice" required>
+        </div>
+        
+            <div class="form-gr">
+                <label for="mealtype">Meal Type</label>
+                <select  id="mealtype" >
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                </select>
+            </div>
+            <div class="form-gr">
+                <label for="mealcal">Estimated calorie: <span id="estical">450</span>cal</label>
+                <input type="range" name="mealcal" id="mealcal" min="0" max="5000" value="450" oninput="document.getElementById('estical').innerText = this.value" required>
+            </div>
+        
+    <div>   
+        <button   style="width:100%; padding:10px; background-color: beige;" onclick="myfunction()" >Add to food log</button>
+    </div>
+    <div style="margin: auto;">
+        <h2>Today's log<span id="kal" style="border: 2px solid navy; background-color:navy; color:white; border-radius: 10px; margin-left: 5px;">0 kcal total</span></h2>
+   <table class="styletb" id="tab">
+    <tr>
+        <th>Date</th>
+        <th>Meal</th>
+        <th>Food iteam</th>
+        <th>Calories</th>
+        
+    </tr>  
+   </table>
+</div>
+
+<script>
+    function myfunction(){
+        let date= document.getElementById("date").value;
+        meal= document.getElementById("mealtype").value;
+        foodname= document.getElementById("name").value;
+        calorie= document.getElementById("mealcal").value;
+        
+   if(date == "" || meal == "" || foodname == "" || calorie == "") {
+    alert("Please fill all feilds.");
+    return;
+   }
+   let table = document.getElementById("tab");
+   let row = table.insertRow(); 
+row.insertCell(0).innerText = date ;
+row.insertCell(1).innerText = meal;
+row.insertCell(2).innerText = foodname;
+row.insertCell(3).innerText = calorie;
+
+document.getElementById("date").value = "" ;
+document.getElementById("mealtype").value = "";
+document.getElementById("foodname").value = "";
+document.getElementById("calorie").value = "" ;
+    } 
+</script>
+            </div>
+
+         <footer>
+        <div class="ft1">
+            <div class="ft2">
+            <h4>NutriTrack</h4>
+            <p>A simple ,student built tool for understandin your daily calorie needs.</p>
+            </div>
+            <div class="ft2">
+                <h4>Site</h4>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calcutator.html">Calorie Calculator</a></li>
+                <li><a href="foodlog.html">Foodlog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+
+            </div>
+            <div class="ft2">
+                <h4>Project</h4>
+                <p>CSM 1206 Group Project.<br>
+                Built with HTMl,CSS and JAVASCRIPT.</p>
+            </div>
+            </div>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+.navi{
+    background-color:rgb(229, 169, 238);
+    border-bottom: 4px solid rgb(72, 7, 39);
+    position: sticky;
+
+}
+.nav-in{
+    max-width: 1080px;
+    margin: auto;
+    padding: 25px;
+    display:flex ;
+}
+.nu{
+font-family: cursive;
+font-size:xx-large;
+color:rgb(22, 18, 26);
+display: flex;
+}
+.nav-link{
+    list-style: none;
+    display: flex;
+    margin:0px;
+    gap:30px;
+    padding: 10px;
+
+}
+    
+
+.hero{
+    background-image: linear-gradient(rgba(61, 61, 57, 0.5),rgba(43,43,38,0.6)),
+    url("bannarimg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    padding: 150px 24px 90px ;
+    color:bisque;
+    text-align: left;
+}
+.sec1{
+font-family: cursive;
+font-size: 40px;
+margin-top:8px;
+}
+.container{
+    display:flex;
+    gap:24px;
+    margin:32px;
+background-color:blanchedalmond;
+}
+.card{
+    display:flex;
+    border: 1px solid pink;
+    padding: 20px;
+    background-color: rgb(108, 21, 57);
+    margin-bottom: 10px;
+    
+
+}
+.card-content{
+     background-color:rgb(229, 224, 224);
+
+    }
+
+
+.form-card{
+    background-color: rgb(237, 175, 222);
+    border: 1px solid rgb(238, 144, 205);
+    border-radius: 16px;
+margin:auto;
+width: 90%;
+    padding: 40px;
+}
+.form-gr{
+    margin-bottom:20px;
+}
+.form-gr label{
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color:rgb(48, 9, 9);
+}
+input,select,textarea{
+    width:70%;
+    padding:11px 14px ;
+    border-radius:8px;
+font-family:cursive;
+font-size: larger;
+background-color:cornsilk ;
+}
+.btn{
+    background-color: rgb(53, 32, 67);
+    padding:15px;
+    border-radius: 14px;
+    
+}
+.link{
+    color:aliceblue;
+}
+.result{
+    font-size: 30px;
+    text-align: center;
+}
+
+table,th,td{
+    border: 1px solid rgb(25, 25, 57);
+    border-collapse: collapse;
+    padding: 20px;
+    margin:auto;
+}
+.ft1{
+    background-color: rgb(43, 40, 40);
+width:100%;
+display: flex;
+padding:60px;
+}
+.ft2{
+    color:beige;
+    display: block;
+    padding: 20px;
+}
